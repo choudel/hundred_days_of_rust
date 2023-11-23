@@ -1,0 +1,12 @@
+[package]
+name = "hundred_days_of_rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[[bin]]
+name = "two_sum"
+path = "src/two_sum.rs"
