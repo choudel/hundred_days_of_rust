@@ -2,6 +2,7 @@
 name = "hundred_days_of_rust"
 version = "0.1.0"
 edition = "2021"
+default-run = "hundred_days_of_rust"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -10,3 +11,7 @@ edition = "2021"
 [[bin]]
 name = "two_sum"
 path = "src/two_sum.rs"
+
+[[bin]]
+name = "observer_pattern"
+path = "src/observer_pattern.rs"
