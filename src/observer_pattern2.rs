@@ -16,7 +16,9 @@ impl ConcreteObservable {
             observers: Vec::new(),
         }
     }
-    fn get_state() {}
+    fn get_state() {
+        println!("this is the state")
+    }
 }
 struct ConcreteObserver {
     id: u32,
@@ -28,7 +30,8 @@ impl ConcreteObserver {
 }
 impl Observer for ConcreteObserver {
     fn update(&self) {
-        println!("ConcreteObserver {} has been updated!", self.id)
+        println!("ConcreteObserver {} has been updated!", self.id);
+        ConcreteObservable::get_state();
     }
     fn get_id(&self) -> u32 {
         self.id

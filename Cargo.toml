@@ -14,4 +14,8 @@ path = "src/two_sum.rs"
 
 [[bin]]
 name = "observer_pattern"
-path = "src/observer_pattern.rs"
+path = "src/observer_pattern2.rs"
+
+[[bin]]
+name = "observer"
+path = "observer_pattern/entry.rs"
