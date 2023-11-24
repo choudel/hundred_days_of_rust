@@ -15,6 +15,9 @@ path = "src/two_sum.rs"
 [[bin]]
 name = "observer_pattern"
 path = "src/observer_pattern2.rs"
+[[bin]]
+name = "palindrome"
+path = "src/palindrome.rs"
 
 [[bin]]
 name = "observer"
