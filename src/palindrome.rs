@@ -1,14 +1,14 @@
-fn is_palindrome(x: i32) -> bool {
-    if x < 0 {
+fn is_palindrome(val: i32) -> bool {
+    if val < 0 {
         return false;
     }
     let mut reversed = 0;
-    let mut number = x;
+    let mut number = val;
     while number > 0 {
         reversed = reversed * 10 + number % 10;
         number /= 10;
     }
-    x == reversed
+    reversed == val
 }
 fn main() {
     println!("{}", is_palindrome(101));

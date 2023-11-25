@@ -18,6 +18,13 @@ path = "src/observer_pattern2.rs"
 [[bin]]
 name = "palindrome"
 path = "src/palindrome.rs"
+[[bin]]
+name = "roman"
+path = "src/roman_integer.rs"
+[[bin]]
+name = "decorator"
+path = "src/decorator.rs"
+
 
 [[bin]]
 name = "observer"
