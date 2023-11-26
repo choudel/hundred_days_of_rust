@@ -13,14 +13,14 @@ fn roman_to_int(s: String) -> i32 {
     .collect();
     let mut sum = 0;
     let mut last = 0;
-    for c in s.chars() {
-        if let Some(&v) = map.get(&c) {
+    for num in s.chars() {
+        if let Some(&v) = map.get(&num) {
             if v > last {
                 sum += v - last - last;
             } else {
                 sum += v
             }
-            last = v;
+            last = v
         }
     }
     sum

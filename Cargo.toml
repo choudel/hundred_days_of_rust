@@ -7,6 +7,7 @@ default-run = "hundred_days_of_rust"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+rand = "0.8.5"
 
 [[bin]]
 name = "two_sum"
@@ -24,8 +25,21 @@ path = "src/roman_integer.rs"
 [[bin]]
 name = "decorator"
 path = "src/decorator.rs"
-
+[[bin]]
+name = "common_prefix"
+path = "src/longest_prefix.rs"
+[[bin]]
+name = "validp"
+path = "src/valid_parentheses.rs"
 
 [[bin]]
 name = "observer"
 path = "observer_pattern/entry.rs"
+
+[[bin]]
+name = "decorator_pattern"
+path = "decorator_pattern/deco.rs"
+
+[[bin]]
+name = "factory_pattern"
+path = "factory_pattern/factory_method.rs"

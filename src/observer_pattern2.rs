@@ -1,6 +1,6 @@
 trait Observable {
     fn add(&mut self, observer: Box<dyn Observer>);
-    fn remove(&mut self, observer: Box<dyn Observer>);
+    fn remove(&mut self, id: u32);
     fn notify(&self);
 }
 trait Observer {
@@ -41,7 +41,10 @@ impl Observable for ConcreteObservable {
     fn add(&mut self, observer: Box<dyn Observer>) {
         self.observers.push(observer)
     }
-    fn remove(&mut self, observer: Box<dyn Observer>) {}
+    fn remove(&mut self, id: u32) {
+        self.observers.retain(|observer| observer.get_id() != id);
+    }
+
     fn notify(&self) {
         for observer in &self.observers {
             observer.update();
@@ -54,5 +57,8 @@ fn main() {
     let observer2 = ConcreteObserver::new(2);
     observable.add(Box::new(observer1));
     observable.add(Box::new(observer2));
-    observable.notify()
+    observable.notify();
+    observable.remove(1);
+
+    observable.notify();
 }
