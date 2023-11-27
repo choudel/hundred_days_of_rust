@@ -13,12 +13,12 @@ fn roman_to_int(s: String) -> i32 {
     .collect();
     let mut sum = 0;
     let mut last = 0;
-    for num in s.chars() {
-        if let Some(&v) = map.get(&num) {
+    for c in s.chars() {
+        if let Some(&v) = map.get(&c) {
             if v > last {
                 sum += v - last - last;
             } else {
-                sum += v
+                sum += v;
             }
             last = v
         }
@@ -26,6 +26,6 @@ fn roman_to_int(s: String) -> i32 {
     sum
 }
 fn main() {
-    let result = roman_to_int("IV".to_string());
+    let result = roman_to_int("IX".to_string());
     println!("{}", result);
 }

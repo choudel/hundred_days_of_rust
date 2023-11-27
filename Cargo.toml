@@ -31,6 +31,9 @@ path = "src/longest_prefix.rs"
 [[bin]]
 name = "validp"
 path = "src/valid_parentheses.rs"
+[[bin]]
+name = "removed"
+path = "src/remove_duplicate.rs"
 
 [[bin]]
 name = "observer"
@@ -43,3 +46,7 @@ path = "decorator_pattern/deco.rs"
 [[bin]]
 name = "factory_pattern"
 path = "factory_pattern/factory_method.rs"
+
+[[bin]]
+name = "abstract_factory"
+path = "factory_pattern/abstract_factory.rs"
