@@ -59,3 +59,14 @@ path = "singleton_pattern/singleton.rs"
 [[bin]]
 name = "command"
 path = "command_pattern/command.rs"
+
+[[bin]]
+name = "adapter"
+path = "adapter_pattern/adapter.rs"
+
+[[bin]]
+name = "facade"
+path = "facade_pattern/facade.rs"
+[[bin]]
+name = "bridge"
+path = "bridge_pattern/bridge.rs"
